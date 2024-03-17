@@ -10,10 +10,10 @@ CREATE TABLE products (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     last_sold_at TIMESTAMP,
-    UNIQUE(product_name) -- Para asegurar que no haya productos duplicados con el mismo nombre
+    UNIQUE(product_name) -- To ensure that there are no duplicate products with the same name
 );
 
--- Insertando 10 productos con valores más realistas
+-- Inserting 10 products with more realistic values
 INSERT INTO products (product_name, description, price, quantity, color, material, manufacturer, created_at, updated_at)
 VALUES 
     ('Smartphone Samsung Galaxy S20', 'Teléfono inteligente con cámara de alta resolución y pantalla AMOLED de 6.2 pulgadas.', 899.99, 50, 'Gris', 'Vidrio y metal', 'Samsung', DATETIME('now'), DATETIME('now')),
@@ -27,7 +27,7 @@ VALUES
     ('Consola de videojuegos Sony PlayStation 5', 'Consola de última generación con capacidad de reproducción de juegos en 4K y tecnología de trazado de rayos.', 499.99, 10, 'Blanco y negro', 'Plástico', 'Sony', DATETIME('now'), DATETIME('now')),
     ('Aspiradora Dyson V11 Absolute', 'Aspiradora inalámbrica con motor de succión potente y filtro avanzado para alérgenos.', 599.99, 20, 'Plata', 'Plástico', 'Dyson', DATETIME('now'), DATETIME('now'));
 
--- Insertando 5 productos de limpieza
+-- Inserting 5 cleaning products
 INSERT INTO products (product_name, description, price, quantity, color, material, manufacturer, created_at, updated_at)
 VALUES 
     ('Detergente líquido Tide', 'Detergente líquido para lavandería con tecnología de limpieza avanzada.', 9.99, 50, 'Azul', 'Plástico', 'Tide', DATETIME('now'), DATETIME('now')),
@@ -36,7 +36,7 @@ VALUES
     ('Limpiavidrios Windex', 'Limpiador de ventanas y superficies de vidrio que deja un brillo impecable.', 3.99, 60, 'Azul', 'Plástico', 'Windex', DATETIME('now'), DATETIME('now')),
     ('Paños de microfibra AmazonBasics', 'Paquete de 24 paños de microfibra ultra suaves y absorbentes para la limpieza del hogar.', 12.99, 50, 'Multicolor', 'Microfibra', 'AmazonBasics', DATETIME('now'), DATETIME('now'));
 
--- Insertando 10 productos de cocina
+-- Inserting 10 kitchen products
 INSERT INTO products (product_name, description, price, quantity, color, material, manufacturer, created_at, updated_at)
 VALUES 
     ('Olla a presión Instant Pot', 'Olla multifuncional programable con capacidades de cocción a presión, lenta, arrocera, vaporera y más.', 79.99, 20, 'Acero inoxidable', 'Metal', 'Instant Brands', DATETIME('now'), DATETIME('now')),
@@ -50,7 +50,7 @@ VALUES
     ('Termómetro digital ThermoPro', 'Termómetro de cocina digital con sonda de acero inoxidable y pantalla LCD para una lectura precisa de la temperatura.', 19.99, 35, 'Plata', 'Plástico y metal', 'ThermoPro', DATETIME('now'), DATETIME('now')),
     ('Tabla de cortar de bambú Extra Grande', 'Tabla de cortar duradera y resistente hecha de bambú natural, ideal para cortar carne, verduras y más.', 21.99, 45, 'Marrón', 'Bambú', 'HOMWE', DATETIME('now'), DATETIME('now'));
 
--- Insertando 10 productos de alimentación (excluyendo frutas y verduras)
+-- Inserting 10 food products (excluding fruits and vegetables)
 INSERT INTO products (product_name, description, price, quantity, color, material, manufacturer, created_at, updated_at)
 VALUES 
     ('Arroz blanco de grano largo', 'Arroz de grano largo ideal para acompañar platos principales y guarniciones.', 5.99, 50, NULL, NULL, 'Varios', DATETIME('now'), DATETIME('now')),
@@ -64,7 +64,7 @@ VALUES
     ('Barrita energética de almendras y chocolate', 'Barrita energética hecha con almendras tostadas y chocolate negro, perfecta para un impulso rápido de energía.', 1.49, 120, NULL, NULL, 'Varios', DATETIME('now'), DATETIME('now')),
     ('Leche de almendras sin azúcar', 'Leche de almendras sin azúcar añadido, rica en calcio y baja en calorías, ideal para dietas veganas y vegetarianas.', 3.99, 40, NULL, NULL, 'Varios', DATETIME('now'), DATETIME('now'));
 
--- Insertando 10 productos de frutas y verduras
+-- Inserting 10 fruits and vegetables products
 INSERT INTO products (product_name, description, price, quantity, color, material, manufacturer, created_at, updated_at)
 VALUES 
     ('Manzanas Granny Smith', 'Manzanas verdes Granny Smith, crujientes y refrescantes.', 2.99, 50, 'Verde', NULL, 'Varios', DATETIME('now'), DATETIME('now')),
